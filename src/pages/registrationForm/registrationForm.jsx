@@ -44,10 +44,10 @@ const RegistrationForm = () => {
 
   return (
 <div className='flex flex-col items-right'>
-  <h2 className="text-2xl font-semibold mb-7 flex justify-start text-secondary-100 m-auto">Registration Form</h2>
+  <h2 className="text-2xl font-semibold mb-7 flex justify-start text-lime-500 m-auto">Registration Form</h2>
   <form onSubmit={handleSubmit} className='flex justify-end'>
   <div className="mb-7 mx-10">
-        <label htmlFor="passport" className="block text-sm font-medium text-secondary-100">
+        <label htmlFor="passport" className="block text-sm font-medium text-gray-500">
           Passport (Upload):
         </label>
         <input
@@ -55,7 +55,7 @@ const RegistrationForm = () => {
           id="passport"
           name="passport"
           accept="image/*"
-          className="mt-1 p-2 w-56 border border-primary rounded-md"
+          className="mt-1 p-2 w-56 border border-gray-800 rounded-md"
           required
         />
       </div>
@@ -64,7 +64,7 @@ const RegistrationForm = () => {
     <form onSubmit={handleSubmit} className='w-full flex flex-wrap justify-center'>
       <div className="flex flex-wrap justify-between w-full mb-4 mx-10 md:mx-auto">
         <div className="w-full md:w-96 mb-4 md:mb-7">
-          <label htmlFor="firstName" className="block text-sm font-medium text-secondary-100 md:mx-10">
+          <label htmlFor="firstName" className="block text-sm font-medium text-gray-500 md:mx-10">
             First Name:
           </label>
           <input
@@ -73,13 +73,13 @@ const RegistrationForm = () => {
             name="firstName"
             value={formData.firstName}
             onChange={handleChange}
-            className="mt-1 p-2 w-full border border-primary rounded-md md:mx-10"
+            className="mt-1 p-2 w-full border border-gray-800 rounded-md md:mx-10"
             required
           />
         </div>
 
         <div className="w-full md:w-96 mb-4 md:mb-7">
-          <label htmlFor="lastName" className="block text-sm font-medium text-secondary-100 md:mx-10">
+          <label htmlFor="lastName" className="block text-sm font-medium text-gray-500 md:mx-10">
             Last Name:
           </label>
           <input
@@ -88,13 +88,13 @@ const RegistrationForm = () => {
             name="lastName"
             value={formData.lastName}
             onChange={handleChange}
-            className="mt-1 p-2 w-full border border-primary rounded-md md:mx-10"
+            className="mt-1 p-2 w-full border border-gray-800 rounded-md md:mx-10"
             required
           />
         </div>
 
         <div className="w-full md:w-96 mb-4 md:mb-7">
-          <label htmlFor="otherName" className="block text-sm font-medium text-secondary-100 md:mx-10">
+          <label htmlFor="otherName" className="block text-sm font-medium text-gray-500 md:mx-10">
             Other Name:
           </label>
           <input
@@ -103,13 +103,13 @@ const RegistrationForm = () => {
             name="otherName"
             value={formData.otherName}
             onChange={handleChange}
-            className="mt-1 p-2 w-full border border-primary rounded-md md:mx-10"
+            className="mt-1 p-2 w-full border border-gray-800 rounded-md md:mx-10"
             required
           />
         </div>
 
         <div className="w-full md:w-96 mb-4 md:mb-7">
-          <label htmlFor="email" className="block text-sm font-medium text-secondary-100 md:mx-10">
+          <label htmlFor="email" className="block text-sm font-medium text-gray-500 md:mx-10">
             Email:
           </label>
           <input
@@ -118,13 +118,13 @@ const RegistrationForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="mt-1 p-2 w-full border border-primary rounded-md md:mx-10"
+            className="mt-1 p-2 w-full border border-gray-800 rounded-md md:mx-10"
             required
           />
         </div>
 
         <div className="w-full md:w-96 mb-4 md:mb-7">
-          <label htmlFor="dob" className="block text-sm font-medium text-secondary-100 md:mx-10">
+          <label htmlFor="dob" className="block text-sm font-medium text-gray-500 md:mx-10">
             DOB:
           </label>
           <input
@@ -133,13 +133,13 @@ const RegistrationForm = () => {
             name="dob"
             value={setFormattedDob.dob}
             onChange={handleChange}
-            className="mt-1 p-2 w-full border border-primary rounded-md md:mx-10"
+            className="mt-1 p-2 w-full border border-gray-800 rounded-md md:mx-10"
             required
           />
         </div>
 
         <div className="w-full md:w-96 mb-4 md:mb-7">
-          <label htmlFor="phone" className="block text-sm font-medium text-secondary-100 md:mx-10">
+          <label htmlFor="phone" className="block text-sm font-medium text-gray-500 md:mx-10">
             Phone No:
           </label>
           <input
@@ -148,13 +148,13 @@ const RegistrationForm = () => {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="mt-1 p-2 w-full border border-primary rounded-md md:mx-10"
+            className="mt-1 p-2 w-full border border-gray-800 rounded-md md:mx-10"
             required
           />
         </div>
 
         <div className="w-full md:w-96 mb-4 md:mb-7">
-          <label htmlFor="religion" className="block text-sm font-medium text-secondary-100 md:mx-10">
+          <label htmlFor="religion" className="block text-sm font-medium text-gray-500 md:mx-10">
             Religion:
           </label>
           <input
@@ -163,13 +163,13 @@ const RegistrationForm = () => {
             name="religion"
             value={formData.religion}
             onChange={handleChange}
-            className="mt-1 p-2 w-full border border-primary rounded-md md:mx-10"
+            className="mt-1 p-2 w-full border border-gray-800 rounded-md md:mx-10"
             required
           />
         </div>
 
         <div className="w-full md:w-96 mb-4 md:mb-7">
-          <label htmlFor="state" className="block text-sm font-medium text-secondary-100 md:mx-10">
+          <label htmlFor="state" className="block text-sm font-medium text-gray-500 md:mx-10">
             State:
           </label>
           <input
@@ -178,13 +178,13 @@ const RegistrationForm = () => {
             name="state"
             value={formData.state}
             onChange={handleChange}
-            className="mt-1 p-2 w-full border border-primary rounded-md md:mx-10"
+            className="mt-1 p-2 w-full border border-gray-800 rounded-md md:mx-10"
             required
           />
         </div>
 
         <div className="w-full md:w-96 mb-4 md:mb-7">
-          <label htmlFor="lga" className="block text-sm font-medium text-secondary-100 md:mx-10">
+          <label htmlFor="lga" className="block text-sm font-medium text-gray-500 md:mx-10">
             LGA:
           </label>
           <input
@@ -193,13 +193,13 @@ const RegistrationForm = () => {
             name="lga"
             value={formData.lga}
             onChange={handleChange}
-            className="mt-1 p-2 w-full border border-primary rounded-md md:mx-10"
+            className="mt-1 p-2 w-full border border-gray-800 rounded-md md:mx-10"
             required
           />
         </div>
 
         <div className="w-full md:w-96 mb-4 md:mb-7">
-          <label htmlFor="community" className="block text-sm font-medium text-secondary-100 md:mx-10">
+          <label htmlFor="community" className="block text-sm font-medium text-gray-500 md:mx-10">
             Community:
           </label>
           <input
@@ -208,13 +208,13 @@ const RegistrationForm = () => {
             name="community"
             value={formData.community}
             onChange={handleChange}
-            className="mt-1 p-2 w-full border border-primary rounded-md md:mx-10"
+            className="mt-1 p-2 w-full border border-gray-800 rounded-md md:mx-10"
             required
           />
         </div>
         {/* Add other form fields similarly */}
         <div className="w-full md:w-96 mb-4 md:mb-7">
-          <label htmlFor="maritalStatus" className="block text-sm font-medium text-secondary-100 md:mx-10">
+          <label htmlFor="maritalStatus" className="block text-sm font-medium text-gray-500 md:mx-10">
             Marital Status:
           </label>
           <select
@@ -222,7 +222,7 @@ const RegistrationForm = () => {
             name="maritalStatus"
             value={formData.maritalStatus}
             onChange={handleChange}
-            className="mt-1 p-2 w-full border border-primary rounded-md md:mx-10"
+            className="mt-1 p-2 w-full border border-gray-800 rounded-md md:mx-10"
             required
           >
             <option value="">Select Marital Status</option>
@@ -232,7 +232,7 @@ const RegistrationForm = () => {
           </select>
         </div>
         <div className="w-full md:w-96 mb-4 md:mb-7">
-          <label htmlFor="qualification" className="block text-sm font-medium text-secondary-100 md:mx-10">
+          <label htmlFor="qualification" className="block text-sm font-medium text-gray-500 md:mx-10">
             Qualification:
           </label>
           <select
@@ -240,7 +240,7 @@ const RegistrationForm = () => {
             name="qualification"
             value={formData.qualification}
             onChange={handleChange}
-            className="mt-1 p-2 w-full border border-primary rounded-md md:mx-10"
+            className="mt-1 p-2 w-full border border-gray-800 rounded-md md:mx-10"
             required
           >
             <option value="">Select Qualification</option>
@@ -256,7 +256,7 @@ const RegistrationForm = () => {
       </div>
       <button
         type="submit"
-        className="w-full md:w-20 bg-secondary-200 text-white py-2 px-4 rounded-md hover:bg-primary mx-10"
+        className="w-full md:w-20 bg-lime-500 text-white py-2 px-4 rounded-md hover:bg-primary mx-10"
       >
         Register
       </button>
@@ -272,3 +272,6 @@ const RegistrationForm = () => {
 };
 
 export default RegistrationForm;
+
+
+

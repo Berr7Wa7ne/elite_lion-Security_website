@@ -1,18 +1,14 @@
-// import Navbar from './components/navbar';
-import GuardServices from './components/guardServices'
-// import RegistrationForm from './components/registrationForm'
-// import MobilePatrolServices from './components/mobilePatrolServices'
-// import Contact from './components/contact'
+//import GuardServices from './pages/guardServices/guardServices'
+import RegistrationForm from './pages/registrationForm/registrationForm'
+//import MobilePatrolServices from './pages/mobilePatrolServices/mobilePatrolServices'
 
 function App() {
 
   return (
     <div className="App">
-      {/*<Navbar /> */}
-      {/*<Contact/> */}
-      {/*<RegistrationForm /> */} 
-      {<GuardServices />}  
-      {/*<MobilePatrolServices> */}
+      { <RegistrationForm /> } 
+      { /*<GuardServices />*/}  
+      { /*<MobilePatrolServices />*/ }
     </div>
   )
 }
